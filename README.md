@@ -1,3 +1,3 @@
 # TSWD
 
-Dataset - https://www.kaggle.com/andrewmvd/tsunami-dataset
+Dataset - https://www.kaggle.com/jessemostipak/volcano-eruptions
