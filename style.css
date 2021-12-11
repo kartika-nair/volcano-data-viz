@@ -39,7 +39,11 @@
   text-align: center;
 }
 
-.text {
-  padding: 2rem 20rem;
-  font-size: 1.1rem;
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  position: relative;
 }
