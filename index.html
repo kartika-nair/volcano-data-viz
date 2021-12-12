@@ -18,10 +18,99 @@
   </head>
 
   <body>
-    <section>
+    <div class="liquid">
+      <div class="first-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+            >
+              <stop offset="0" stop-color="#FCB930" />
+              <stop offset="1" stop-color="#FCB930" />
+            </linearGradient>
+          </defs>
+          <filter id="f4">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="20" />
+            <feColorMatrix
+              result="matrixOut"
+              in="offOut"
+              type="matrix"
+              values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"
+            />
+            <feGaussianBlur
+              result="blurOut"
+              in="matrixOut"
+              stdDeviation="30"
+            />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+          <path
+            id="first"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="second-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient2"
+            >
+              <stop offset="0" stop-color="#FA7445" />
+              <stop offset="1" stop-color="#FA7445" />
+            </linearGradient>
+          </defs>
+          <path
+            id="second"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient2)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="third-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient3"
+            >
+              <stop offset="0" stop-color="#D82909" />
+              <stop offset="1" stop-color="#D82909" />
+            </linearGradient>
+          </defs>
+          <path
+            id="third"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient3)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+    </div>
+    <section id="everything">
       <div class="container">
         <h2 class="main-title">Let's Talk About Volcanoes</h2>
         <img src="images/volcano.jpg" class="volcano" alt="" />
+        <button id="volc__btn" class="volcano__button">
+          Click Here
+        </button>
       </div>
       <div class="content">
 
@@ -88,6 +177,12 @@
               <i class="fas fa-chevron-right fa-lg" style="color:white; font-size:3rem;"></i>
             </button>
 
+            <!-- <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div> -->
+
           </div>
         </div>
 
@@ -153,11 +248,13 @@
     </section>
 
 
-    <script
+
+
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
      crossorigin="anonymous" referrerpolicy="no-referrer"></script>

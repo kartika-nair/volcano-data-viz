@@ -6,8 +6,37 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201d20;
+  position: relative;
+  overflow-x: hidden;
+}
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.first-svg {
+  opacity: 0;
+}
+.second-svg {
+  opacity: 0;
+}
+.third-svg {
+  opacity: 0;
+}
+
+
+
+
 .container {
   height: 100vh;
+  position:relative;
 }
 .container img {
   width: 100%;
@@ -367,6 +396,7 @@
   flex-flow:row-reverse;
   justify-content:end;
   gap:4rem !important;
+  margin-top:-1.5rem;
 }
 
 .ashen__bottom .backward p{

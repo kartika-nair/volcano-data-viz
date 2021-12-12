@@ -1,24 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("loaded");
+    // console.log("loaded");
     let btn = document.getElementById('volc__btn');
-    console.log(btn);
+    // console.log(btn);
     btn.addEventListener("click", () => {
-      var morphing = anime
+      // var morphing = 
+      anime
         .timeline({})
+        // .add({
+        //   targets: ".container",
+        //   width: 0,
+        //   height: 0,
+        //   opacity: 0,
+        //   easing: "easeInOutQuad",
+        //   delay: 2000,
+        //   duration: 2000
+        // })
         .add({
-          targets: ".container",
-          width: 0,
-          height: 0,
+          targets: ".main-title, #volc__btn",
           opacity: 0,
           easing: "easeInOutQuad",
-          duration: 2000
+          duration: 1000
         })
-        .add({
-          targets: ".title, #volc__btn",
-          opacity: 0,
-          easing: "easeInOutQuad",
-          duration: 2000
-        }, "-=2000")
         .add({
           targets: "#first",
           d: [
@@ -69,7 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity: 1,
           },
           "-=2800"
-        ).add(
+        )
+        .add(
           {
             targets: "#third",
             d: [
@@ -94,35 +97,41 @@ document.addEventListener("DOMContentLoaded", () => {
             targets: ".third-svg",
             opacity: 1,
             complete: (anim) => {
-              document.querySelector(".container").scroll(0,1300);
+              setTimeout(() => {
+                document.querySelector(".container").style.display = "none";
+                // document.getElementById("everything").scroll(0,1000);
+                // window.scrollBy(0,1000)
+                // document.querySelector("content-images").scrollIntoView();
+              },3000)
             }
           },
           "-=2800"
         )
-        .add(
-          {
-            targets: ".right_bg",
-            width: [0, "700px"],
-            duration: 1500
-          },
-        )
-        .add(
-          {
-            targets: ".app_img",
-            translateX: [200, 0],
-            opacity: [0, 1],
-            duration: 1500 
-          },
-          "-=1000"
-        )
-        .add(
-          {
-            targets: ".text_wrapper, .download",
-            translateX: [-200, 0],
-            opacity: [0, 1],
-            duration: 1500 
-          },
-          "-=1000"
-        );
+        // .add(
+        //   {
+        //     targets: ".right_bg",
+        //     width: [0, "700px"],
+        //     duration: 1500
+        //   },
+        // )
+        // .add(
+        //   {
+        //     targets: ".app_img",
+        //     translateX: [200, 0],
+        //     opacity: [0, 1],
+        //     duration: 1500 
+        //   },
+        //   "-=1000"
+        // )
+        // .add(
+        //   {
+        //     targets: ".text_wrapper, .download",
+        //     translateX: [-200, 0],
+        //     opacity: [0, 1],
+        //     duration: 1500 
+        //   },
+        //   "-=1000"
+        // );
+        ;
     });
   });
