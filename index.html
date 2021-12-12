@@ -11,46 +11,248 @@
       href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
 
   <body>
+    <!-- <div class="liquid">
+      <div class="first-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+            >
+              <stop offset="0" stop-color="#ffb75e" />
+              <stop offset="1" stop-color="#ed8f03" />
+            </linearGradient>
+          </defs>
+          <filter id="f4">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="20" />
+            <feColorMatrix
+              result="matrixOut"
+              in="offOut"
+              type="matrix"
+              values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"
+            />
+            <feGaussianBlur
+              result="blurOut"
+              in="matrixOut"
+              stdDeviation="30"
+            />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+          <path
+            id="first"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="second-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient2"
+            >
+              <stop offset="0" stop-color="#c21500" />
+              <stop offset="1" stop-color="#ffc500" />
+            </linearGradient>
+          </defs>
+          <path
+            id="second"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient2)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+      <div class="third-svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient3"
+            >
+              <stop offset="0" stop-color="#ee0979" />
+              <stop offset="1" stop-color="#ff6a00" />
+            </linearGradient>
+          </defs>
+          <path
+            id="third"
+            d="M-233.536,0,2045.179-3.714s-284.143,391.857-614.714,390-410.429-221-742.857-209.857S243.75,460.572-9.75,455-233.536,0-233.536,0Z"
+            fill="url(#linear-gradient3)"
+            filter="url(#f4)"
+          />
+        </svg>
+      </div>
+    </div> -->
     <section>
       <div class="container">
-        <h2 class="main-title">Volcano</h2>
+        <h2 class="main-title">Let's Talk About Volcanoes</h2>
         <img src="images/volcano.jpg" class="volcano" alt="" />
       </div>
       <div class="content">
-        <!-- <div class="content-images">
-          <div>
-            <img src="images/volcano.jpg" alt="" width="190 px"/>
-            <h4>??</h4>
-            <h3>!!</h3>
+
+        <div class="content-images">
+          <div class="info">
+            <div class="info__top">
+              <h2>...or more specifically, volcanic activity.</h2>
+              <p>There are 55 different types of volcanic events, ranging from ash clouds to island formation. But which of these are the most common? And which one's the deadliest? Let's have a look.</p>
+            </div>
+            <div class="info__bottom">
+              <div class="infoBottom__data forward">
+                <img src="images/contentImg1.png" alt="">
+                <p>Of the 10,761 recorded events, 7,825 were explosions, making this the most common type of volcanic activity.</p>
+              </div>
+              <div class="infoBottom__data backward">
+                <img src="images/contentImg2.png" alt="">
+                <p>Explosions are also the most fatal type of volcanic activity - constituting 411 of the 585 events with fatalities.</p>
+              </div>
+              <div class="infoBottom__data forward">
+                <img src="images/contentImg3.png" alt="">
+                <p>Earthquakes, which are the most common form of volcanic activity not involving lava or ash, have an extremely high fatality rate - around 15% of all volcanically induced earthquakes have at least one casualty.</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="images/volcano.jpg" alt="" width="190 px"/>
-            <h4>!!</h4>
-            <h3>??</h3>
-          </div>
-        </div> -->
-        <div class="chart">
-          <canvas id = "c1"></canvas>
         </div>
+        
+        
+        <div class="text">
+
+          <div class="text__header">
+            <h2>LOOKING BACK ON THE LAST DECADE</h2>
+            <p>The below graphs compare the number of explosions by year, country, and type of volcano, between 2010 and 2020. Click on the arrows to move between the graphs and hover over the bars to see the values.</p>
+          </div>
+
+          <div class="carousel">
+
+            <button class="carousel__button carousel__button--left">
+              <i class="fas fa-chevron-left fa-lg" style="color:white; font-size:3rem;"></i>
+            </button>
+
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+
+                <li class="carousel__slide current-slide">
+                  <div class="chart">
+                    <canvas id = "c1"></canvas>
+                  </div>
+                </li>
+                <li class="carousel__slide">
+                  <div class="chart">
+                    <canvas id = "c2"></canvas>
+                  </div>
+                </li>
+                <li class="carousel__slide">
+                  <div class="chart">
+                    <canvas id = "c3"></canvas>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="carousel__button carousel__button--right">
+              <i class="fas fa-chevron-right fa-lg" style="color:white; font-size:3rem;"></i>
+            </button>
+
+            <!-- <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+            </div> -->
+
+          </div>
+        </div>
+
+        <div class="dead">
+
+          <div class="dead__header">
+            <h2>THE DEADLIEST ERUPTIONS</h2>
+            <p>Take a look at the locations of the 11 volcanic eruptions between 2010 and 2020 that had human casualties.</p>
+          </div>
+          <div class="dead__bottom">
+            <div class="deadBottom__left">
+              <ol class="deadList">
+                <li class="deadList__item">Volcán de Fuego, Guatemala (2018) - <span class="deadList__item--red">3,000 fatalities</span></li>
+                <li class="deadList__item">Anak Krakatoa, Indonesia (2018) - <span class="deadList__item--red">426 fatalities</span></li>
+                <li class="deadList__item">Mount Merapi, Indonesia (2010) - <span class="deadList__item--red">353 fatalities</span></li>
+                <li class="deadList__item">Mount Ontake, Japan (2014) - <span class="deadList__item--red">63 fatalities</span></li>
+                <li class="deadList__item">Taal, Philippines (2020) - <span class="deadList__item--red">39 fatalities</span></li>
+                <li class="deadList__item">Nabro, Eritrea (2011) - <span class="deadList__item--red">31 fatalities</span></li>
+                <li class="deadList__item">White Island, New Zealand (2019) - <span class="deadList__item--red">22 fatalities</span></li>
+                <li class="deadList__item">Mount Sinabung, Indonesia (2014) - <span class="deadList__item--red">15 fatalities</span></li>
+                <li class="deadList__item">Mount Sinabung, Indonesia (2016) - <span class="deadList__item--red">7 fatalities</span></li>
+                <li class="deadList__item">Kelud, Indonesia (2014) - <span class="deadList__item--red">2 fatalities</span></li>
+                <li class="deadList__item">Stromboli, Italy (2019) - <span class="deadList__item--red">1 fatality</span></li>
+              </ol>
+            </div>
+            <div class="deadBottom__right">
+              <img src="images/dead_volcanoNew.png" alt="">
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="ashen">
+            <div class="ashen__header">
+              <h2>NO NEED TO LOOK SO ASHEN</h2>
+              <p>Volcanoes may be dangerous but there are still ways to safely visit an active volcano.</p>
+            </div>
+            <div class="ashen__bottom">
+              <div class="ashenBottom__data forward">
+                <img src="images/ashenImg1.png" alt="">
+                <p>Only 520 volcanoes have been active in the last 2,000 years - this leaves 127 dormant or extinct volcanes that can be visited safely!</p>
+              </div>
+              <div class="ashenBottom__data backward">
+                <img src="images/ashenImg2.png" alt="">
+                <p>Do your research! Stratovolcanoes, particularly those with Andesite formations, tend to be the most lethal. There are 294 other volcanoes that do not fit into this category.</p>
+              </div>
+              <div class="ashenBottom__data forward">
+                <img src="images/ashenImg3.png" alt="">
+                <p>Of the 585 fatal events, 22 were preceded by either ashfall or ash plumes. Ash is generally considered a warning sign, and volcanoes with recent ash are usually avoided by tour guides.</p>
+              </div>
+            </div>
+        </div>
+
+
+
       </div>
     </section>
+
+
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
-      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
     <script src="jsFiles/script.js"></script>
     <script src="jsFiles/charts.js"></script>
+    <script src="jsFiles/carousel.js"></script>
   </body>
 </html>

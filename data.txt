@@ -1,0 +1,10 @@
+ALL DATA IN THE LAST DECADE
+
+Chart 1 (explosions by year):
+[(2010, 67), (2011, 21), (2012, 15), (2013, 13), (2014, 14), (2015, 5), (2016, 3), (2017, 6), (2018, 3), (2019, 1), (2020, 2)]
+
+Chart 2 (explosions by country):
+[('Antarctica', 1), ('Australia', 1), ('Cape Verde', 1), ('Chile', 7), ('Chile-Argentina', 1), ('Colombia', 2), ('Costa Rica', 4), ('DR Congo', 2), ('Ecuador', 4), ('Ethiopia', 1), ('France', 1), ('Grenada', 1), ('Guatemala', 3), ('Iceland', 3), ('Indonesia', 24), ('Italy', 2), ('Japan', 12), ('Japan - administered by Russia', 1), ('Mexico', 2), ('New Zealand', 2), ('Nicaragua', 5), ('Papua New Guinea', 6), ('Peru', 1), ('Philippines', 3), ('Russia', 11), ('Solomon Islands', 1), ('Spain', 1), ('Tanzania', 1), ('Tonga', 1), ('Undersea', 1), ('United Kingdom', 4), ('United States', 9), ('Vanuatu', 4), ('Yemen', 1)]
+
+Chart 3 (explosions by volcano type):
+[('Caldera', 12), ('Complex', 14), ('Lava cone', 1), ('Pyroclastic shield', 2), ('Shield', 10), ('Stratovolcano', 80), ('Submarine', 5)]
