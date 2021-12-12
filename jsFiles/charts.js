@@ -18,7 +18,7 @@ const data1 = {
     data: [67,21,15,13,14,5,3,6,3,1,2],
     label: 'Explosions by Year',
     fill: true,
-    backgroundColor: "#cc4d12",
+    backgroundColor: "#FCB930",
   },
   ],
 };
@@ -30,7 +30,7 @@ const data2 = {
     data: [1, 1, 1, 7, 1, 2, 4, 2, 4, 1, 1, 1, 3, 3, 24, 2, 12, 1, 2, 2, 5, 6, 1, 3, 11, 1, 1, 1, 1, 1, 4, 9, 4, 1],
     label: 'Explosions by Country',
     fill: true,
-    backgroundColor: "#cc4d12",
+    backgroundColor: "#FA7445",
   },
   ],
 };
@@ -42,7 +42,7 @@ const data3 = {
     data: [12, 14, 1, 2, 10, 80, 5],
     label: 'Explosions by Volcano Type',
     fill: true,
-    backgroundColor: "#cc4d12",
+    backgroundColor: "#D82909",
   },
   ],
 };

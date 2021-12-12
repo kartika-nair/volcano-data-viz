@@ -2,7 +2,7 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-  .fromTo(".volcano", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+  // .fromTo(".volcano", { y: -50 }, { y: 0, duration: 10 }, "-=10")
   .to(".content", 10, { top: "0%" }, "-=10")
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 4 })
   .to(".content", 10,  { top: "-100%"})

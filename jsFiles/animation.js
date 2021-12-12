@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("loaded");
-    let element = document.querySelector('body');
-    element.addEventListener("scroll", () => {
+    let btn = document.getElementById('volc__btn');
+    console.log(btn);
+    btn.addEventListener("click", () => {
       var morphing = anime
         .timeline({})
         .add({
-          targets: ".circle, .rand_circle",
+          targets: ".container",
           width: 0,
           height: 0,
           opacity: 0,
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
           duration: 2000
         })
         .add({
-          targets: ".title, #btn",
+          targets: ".title, #volc__btn",
           opacity: 0,
           easing: "easeInOutQuad",
           duration: 2000
@@ -93,8 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             targets: ".third-svg",
             opacity: 1,
             complete: (anim) => {
-              document.querySelector(".second_content").style.display = "flex";
-              document.querySelector(".first_content").style.display = "none";
+              document.querySelector(".container").scroll(0,1300);
             }
           },
           "-=2800"

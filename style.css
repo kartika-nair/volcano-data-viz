@@ -18,11 +18,28 @@
 }
 .main-title {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  font-size: 6rem;
+  top: 40%;
+  left: 53%;
+  font-size: 8rem;
   transform: translate(-50%, -30%);
+  /* text-align:center; */
 }
+
+.volcano__button{
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform: translateX(-50%);
+  padding:0.625rem 1rem;
+  border-radius: 0.625rem;
+  outline:none;
+  border:none;
+  background-color:orange;
+  cursor:pointer;
+  color:black;
+  font-family: Poppins;
+}
+
 
 .content {
   width: 100%;
@@ -54,7 +71,7 @@
   justify-content:center;
   align-items:center;
   width:100%;
-  margin-top:2rem;
+  margin-top:4rem;
   /* margin-left:5rem; */
   font-family:poppins;
 }
@@ -124,6 +141,7 @@
   align-items:center;
   flex-flow:column;
   min-height:100vh;
+  margin-top:4rem;
 }
 
 .text__header{
@@ -353,4 +371,25 @@
 
 .ashen__bottom .backward p{
   /* width:50% !important; */
+}
+
+.volc__footer{
+  height:5.5rem;
+  background-color:rgb(70, 70, 70);
+  display:flex;
+  justify-content:center;
+}
+
+.volcFooter__info{
+  display:flex;
+  flex-flow:row;
+  justify-content:space-between;
+  align-items:center;
+  width:85%;
+}
+
+.volcFooter__info h3{
+  font-size:1rem;
+  font-family: Poppins;
+  color:white;
 }
