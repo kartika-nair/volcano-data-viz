@@ -4,4 +4,4 @@ A website with data visualizations regarding volcanoes. Done as the final projec
 
 The dataset used for the visualizations can be found [here](https://www.kaggle.com/jessemostipak/volcano-eruptions).
 
-The website itself can be found [here](kartika-nair.github.io/volcano-data-viz).
+The website itself can be found [here](kartika-nair.github.io/volcano-data-viz) (NOTE: it only works with a screen resolution of 1920x1080).
